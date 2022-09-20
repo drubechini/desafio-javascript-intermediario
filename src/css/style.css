@@ -1,0 +1,102 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #E5E5E5;
+    background-image: url('../images/bg-repeat.jpg');
+    background-size: contain;
+    display: relative;
+    background-repeat: repeat;
+}
+
+.texto {
+    padding-right: 50px;
+    display: absolute;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 288px;
+    height: 46px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.formulario {
+    width: 340px;
+    height: 378px;
+    background-color: #ffffff;
+    display: absolute;
+}
+
+.dados-formulario {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.dados-formulario input {
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+    margin-bottom: 10px
+}
+
+.obrigatorio.mensagem {
+    height: 100px;
+}
+
+.mensagem::placeholder {
+    position: absolute;
+}
+
+.p-formulario {
+    color: #000000;
+    font-weight: 400;
+    margin-top: -2px;
+    margin-bottom: 15px;
+}
+
+
+.enviar {
+    background-color: #3CCC87;
+    height: 41px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  
+}
+
+/*validação*/
+
+span{
+    display: none;
+}
+
+.mensagem-erro{
+    color:red;
+    margin: -8px 0 2px 1px;
+    }
+
+  

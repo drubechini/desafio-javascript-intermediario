@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio CSS + Javascript Intermediário</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="texto">
+            <h2>ficou com dúvida?<br>nos mande uma mensagem!</h2>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.</p>
+        </div>
+
+        <form id="form">
+            <div class="formulario">
+                <div class="dados-formulario">
+
+                    <input class="obrigatorio" type="text" placeholder="Nome Completo*" oninput="validaNome()" />
+                    <span class="mensagem-erro">campo obrigatório</span>
+
+                    <input class="obrigatorio" type="email" placeholder="E-mail*" oninput="validaEmail()" />
+                    <span class="mensagem-erro">campo obrigatório</span>
+
+                    <input class="obrigatorio" type="tel" placeholder="Telefone*" oninput="validaTelefone()" />
+                    <span class="mensagem-erro">campo obrigatório</span>
+
+                    <input class="obrigatorio mensagem" type="text" placeholder="Mensagem*"
+                        oninput="validaMensagem()" />
+                    <span class="mensagem-erro">campo obrigatório</span>
+
+                    <p class="p-formulario">*campos obrigatórios</p>
+
+                    <button class="enviar">Enviar </button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="./src/js/valida.js"></script>
+</body>
+
+</html>
